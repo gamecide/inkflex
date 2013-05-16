@@ -1,0 +1,11 @@
+Running process: C:\Program Files (x86)\FlashDevelop\Tools\fdbuild\fdbuild.exe "C:\Users\Andres\Documents\FlashDevelopProjects\Test\Test.as3proj" -ipc e5249f9f-b64d-47a4-9d9c-acc5a623deb0 -version "4.6.0; 3.7" -compiler "C:\Program Files (x86)\FlashDevelop\Tools\flexsdk" -notrace -library "C:\Program Files (x86)\FlashDevelop\Library"
+Building Test
+mxmlc -load-config+=obj\TestConfig.xml -incremental=true -swf-version=10 -o obj\Test635037333917896424
+Starting java as: java.exe
+INITIALIZING: Adobe Flex Compiler SHell (fcsh)
+Starting new compile.
+Loading configuration file C:\Program Files (x86)\FlashDevelop\Tools\flexsdk\frameworks\flex-config.xml
+Loading configuration file C:\Users\Andres\Documents\FlashDevelopProjects\Test\obj\TestConfig.xml
+obj\Test635037333917896424 (664 bytes)
+(fcsh)Build succeeded
+Done(0)

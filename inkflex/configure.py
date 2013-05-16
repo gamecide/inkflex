@@ -17,7 +17,7 @@ class MainWin ():
     def __init__(self):
 	 
         #Set the Glade file
-        self.gladefile = "gui/MainWindow.glade"  
+        self.gladefile = "gui/ConfigureWindow.glade"  
         self.wTree = gtk.glade.XML(self.gladefile) 
         
         #Get the Main Window, and connect the "destroy" event
@@ -41,22 +41,6 @@ class MainWin ():
           
         bottom = self.wTree.get_widget("bottom")
         bottom.modify_bg(gtk.STATE_NORMAL, self.ligth_gray)
-        
-        #Create selection buttons
-        self.flashBtn = self.wTree.get_widget("flashBtn")
-        self.flashBtn.modify_bg(gtk.STATE_NORMAL, self.white)
-        self.flashBtn.connect('enter-notify-event', self.hover_color)
-        self.flashBtn.connect('leave-notify-event', self.active_color)
-        
-        self.starlingBtn = self.wTree.get_widget("starlingBtn")
-        self.starlingBtn.modify_bg(gtk.STATE_NORMAL, self.white)
-        self.starlingBtn.connect('enter-notify-event', self.hover_color)
-        self.starlingBtn.connect('leave-notify-event', self.active_color)
-
-        self.html5Btn = self.wTree.get_widget("html5Btn")
-        self.html5Btn.modify_bg(gtk.STATE_NORMAL, self.white)
-        self.html5Btn.connect('enter-notify-event', self.hover_color)
-        self.html5Btn.connect('leave-notify-event', self.active_color)
         
         #Create configure button
         self.configureImg = self.wTree.get_widget("configureImg")
